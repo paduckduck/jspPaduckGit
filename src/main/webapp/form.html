@@ -1,0 +1,142 @@
+<!-- text, radio, checkbox, select, da†e, textarea-->
+<!--fieldset, legend, optgroup, color, datalist-->
+<!--1이름ㅇㅇ 2학번 3전공ㅇㅇ
+4기숙사ㅇㅇ 5생일ㅇㅇ 6남기고싶은말ㅇㅇ
+7쓰는휴대폰ㅇㅇ 8응원하는야구팀ㅇㅇ  9좋아하는 스포츠ㅇㅇ  10고향ㅇㅇ  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html form 실습하기</title>
+    </meta>
+</head>
+<body>
+
+<div>
+    <form name="nameform" action="form_ok.jsp" method="post">
+
+        enter your name
+        <br>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+        <br>
+        <br>
+
+        enter your student code
+        <br>
+        <label for="student_code">student code : </label><br>
+        <input type="number" id="student_code" name="student_code"><br>
+        <br>
+
+        what is your major?
+        <br>
+        <input type="checkbox" id="computer" name="computer" value="computer">
+        <label for="computer">computer</label><br>
+        <input type="checkbox" id="electronic" name="electronic" value="electronic">
+        <label for="electronic">electronic</label><br>
+        <input type="checkbox" id="design" name="design" value="design">
+        <label for="design">design</label><br>
+        <input type="checkbox" id="management" name="management" value="management">
+        <label for="management">management</label><br>
+        <input type="checkbox" id="psychology" name="psychology" value="psychology">
+        <label for="psychology">psychology</label><br>
+        <br>
+
+        <label for="birthday">birthday</label>
+        <input type="date" id="birthday" name="birthday"
+               value="2018-01-01"
+               min="1900-01-01" max="2018-01-02">
+        <br>
+        <br>
+
+        <label for="dormitory">Choose your domitory</label>
+        <select id="dormitory" name="dormitory">
+            <option value="torrey">torrey</option>
+            <option value="jangkiryeo">jangkiryeo</option>
+            <option value="kuyper">kuyper</option>
+            <option value="sonyangwon">sonyangwon</option>
+            <option value="philadelphos">philadelphos</option>
+            <option value="carmichael">carmichael</option>
+            <option value="yangduck">yangduck</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="from">where are you from? </label>
+        <select id="from" name="from">
+            <option value="korea">korea</option>
+            <option value="japan">japan</option>
+            <option value="USA">usa</option>
+            <option value="China">china</option>
+            <option value="UK">uk</option>
+            <option value="other">other</option>
+        </select>
+        <br>
+        <br>
+        which sports is your favorite?
+        <br>
+        <input type="checkbox" id="baseball" name="baseball" value="baseball">
+        <label for="baseball">baseball</label><br>
+        <input type="checkbox" id="table_tennis" name="table_tennis" value="table_tennis">
+        <label for="table_tennis">table tennis</label><br>
+        <input type="checkbox" id="tennis" name="tennis" value="tennis">
+        <label for="tennis">tennis</label><br>
+        <input type="checkbox" id="basketball" name="basketball" value="basketball">
+        <label for="basketball">basketball</label><br>
+        <input type="checkbox" id="soccer" name="soccer" value="soccer">
+        <label for="soccer">soccer</label><br>
+        <input type="checkbox" id="other_sports" name="other_sports" value="other_sports">
+        <label for="other_sports">other sports</label><br>
+        <br>
+        which baseball team is your favorite?
+        <br>
+        <input type="radio" id="samsung" name="favorite_team" value="samsung">
+        <label for="samsung">samsung</label><br>
+        <input type="radio" id="doosan" name="favorite_team" value="doosan">
+        <label for="doosan">doosan</label><br>
+        <input type="radio" id="kt" name="favorite_team" value="kt">
+        <label for="kt">kt</label><br>
+        <input type="radio" id="hanhwa" name="favorite_team" value="hanhwa">
+        <label for="hanhwa">hanhwa</label><br>
+        <input type="radio" id="lg" name="favorite_team" value="lg">
+        <label for="lg">lg</label><br>
+        <input type="radio" id="lotte" name="favorite_team" value="lotte">
+        <label for="lotte">lotte</label><br>
+        <input type="radio" id="nc" name="favorite_team" value="nc">
+        <label for="nc">nc</label><br>
+        <input type="radio" id="kia" name="favorite_team" value="kia">
+        <label for="kia">kia</label><br>
+        <input type="radio" id="kiwoom" name="favorite_team" value="kiwoom">
+        <label for="kiwoom">kiwoom</label><br>
+        <input type="radio" id="ssg" name="favorite_team" value="ssg">
+        <label for="ssg">ssg</label><br>
+        <input type="radio" id="dont_like" name="favorite_team" value="dont_like">
+        <label for="dont_like">dont like baseball</label><br>
+        <br>
+
+        <label for="maker">my phone maker is </label>
+        <select id="maker" name="maker">
+            <option value="apple">apple</option>
+            <option value="samsung">samsung</option>
+            <option value="lg">lg</option>
+            <option value="nokia">nokia</option>
+            <option value="google">google</option>
+            <option value="not_here">not here</option>
+        </select>
+        <br>
+        <br>
+
+        <textarea name="message" rows="10" cols="30">
+        leave your massage
+        </textarea>
+        <br>
+        <br>
+        <input type="submit" value="보내기">
+        <br>
+        <br>
+    </form>
+</div>
+</body>
+</html>
